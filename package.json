@@ -1,0 +1,57 @@
+{
+  "name": "@konektika/a11y-checker",
+  "version": "1.0.0",
+  "description": "Web accessibility checker for WCAG 2.2 AA compliance",
+  "main": "dist/a11y-checker.js",
+  "types": "dist/a11y-checker.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src/**/*.ts",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "extension:build": "webpack --config webpack.extension.config.js",
+    "extension:dev": "webpack --config webpack.extension.config.js --watch",
+    "cli": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "wcag",
+    "wcag2.2",
+    "accessibility-testing",
+    "accessibility-checker",
+    "web-accessibility",
+    "inclusive-design",
+    "konektika"
+  ],
+  "author": "KONEKTIKA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Konektika-AGI/a11y-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Konektika-AGI/a11y-checker/issues"
+  },
+  "homepage": "https://github.com/Konektika-AGI/a11y-checker#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0",
+    "@vitest/coverage-v8": "^1.2.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "tsx": "^4.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
